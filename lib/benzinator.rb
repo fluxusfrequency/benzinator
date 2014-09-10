@@ -1,6 +1,5 @@
-require "benzinator/version"
-require "benzinator/car"
+require_relative "benzinator/version"
+require_relative "benzinator/car"
 
 module Benzinator
-  # Your code goes here...
 end

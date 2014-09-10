@@ -1,10 +1,16 @@
 # Benzinator
 
-TODO: Write a gem description
-
 ## Installation
 
 Add this line to your application's Gemfile:
+This is a sample gem to wrap an imaginary car buying application API. It
+is meant to accompany a blog post written for EngineYard and Quick Left.
+The post is currently unpublished.
+
+## Installation
+
+If this gem actually talked to a service, you could use it in your Ruby
+project. To do so, you would add this line to your application's Gemfile:
 
     gem 'benzinator'
 
@@ -18,12 +24,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To get access to the cars for sale on Ben's Benzes, you would do this:
 
-## Contributing
+```ruby
+require 'benzinator'
 
-1. Fork it ( https://github.com/[my-github-username]/benzinator/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+# Find all the cars
+cars = Benzinator::Car.all
+
+# Find a car by id
+honda = Benzinator::Car.find(68)
+
+# Access the car's attributes
+honda.id
+#=> 68
+
+honda.year
+#=>1996
+
+honda.color
+#=> "Blue"
+
+```
+
+Enjoy!
