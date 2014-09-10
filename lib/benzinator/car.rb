@@ -26,9 +26,7 @@ module Benzinator
     def self.all
       response = Faraday.get(API_URL)
       cars = JSON.parse(response.body)
-      cars.map do |attributes|
-        new(attributes)
-      end
+      cars.map { |attributes| new(attributes) }
     end
   end
 end
