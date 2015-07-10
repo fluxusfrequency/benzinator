@@ -4,8 +4,7 @@
 
 Add this line to your application's Gemfile:
 This is a sample gem to wrap an imaginary car buying application API. It
-is meant to accompany a blog post written for EngineYard and Quick Left.
-The post is currently unpublished.
+is meant to accompany a [blog post](https://blog.engineyard.com/2014/wrapping-your-api-in-a-ruby-gem) written for EngineYard and Quick Left.
 
 ## Installation
 
